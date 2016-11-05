@@ -58,7 +58,7 @@ ul{
     background-size:100%;
 }
 .main .play{
-    -webkit-animation: move 2s infinite linear both;
+    -webkit-animation: move3 2s infinite linear both;
     animation: move3 2s infinite linear both;
 }
 
