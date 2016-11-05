@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .out{
+            height: 400px;
+            width: 400px;
+            background: black;
+        }
+        .line{
+            margin: 100px auto;
+            height: 600px;
+            width: 1px;
+            box-shadow: 0 0 40px rgba(232, 227, 62, 0.98);
+            transform: translate(-300px,-600px);
+
+            overflow: hidden;
+
+        }
+        .out:hover .line{
+            transform: translate(300px,600px);
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="out">
+        <div class="line">
+
+        </div>
+    </div>
+</body>
+</html>
