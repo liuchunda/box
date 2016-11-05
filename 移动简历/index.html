@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script>
+        //移动适配-设置各个设备根元素字体大小
+        var desW = 640;
+        var winW = document.documentElement.clientWidth;
+        var desWfontSize = 100;
+        //desW/winW = 100/fs;
+        document.documentElement.style.fontSize = winW/desW*desWfontSize+"px";
+    </script>
+</head>
+<body>
+<div class="main">
+    <div class="music play">
+        <audio src="audio/beyond.mp3" loop preload="none" id="beyond"></audio>
+        <!--
+        preload:
+            none 不预加音视频
+            metadata 只加载元数据（例如：音频的长度）
+            auto 预加载全部音视频
+        controls 显示音视频的用户操作界面
+        -->
+    </div>
+    <img src="" alt="" class="logo animated pulse">
+    <div class="swiper-container">
+        <div class="tag">刘春达简历</div>
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide swiper-slide1">
+                <div class="wrap">
+                    <div class="line">
+
+                    </div>
+                    <div class="bg">
+
+                    </div>
+                </div>
+            </li>
+            <li class="swiper-slide">
+                <ul class="nav">
+                    <li><span>个人信息</span></li>
+                    <li><span>工作经验</span></li>
+                    <li><span>拥有技能</span></li>
+                    <li><span>个人作品</span></li>
+                </ul>
+                <ul class="info">
+                    <li>姓名：刘春达</li>
+                    <li>年龄：18</li>
+                    <li>教育水平：本科</li>
+                    <li>电话：15127662623</li>
+                    <li>邮箱：578888068@qq.com</li>
+                </ul>
+            </li>
+            <li class="swiper-slide">
+                <ul class="nav">
+                    <li><span>个人信息</span></li>
+                    <li><span>工作经验</span></li>
+                    <li><span>拥有技能</span></li>
+                    <li><span>个人作品</span></li>
+                </ul>
+                <ul class="work">
+                    <li class="left con">
+                        <ul>
+                            <li>
+                                2014-2015：
+                            </li>
+                            <li>
+                                易企秀设计
+                            </li>
+                            <li>
+                                2014-2015：
+                            </li>
+                            <li>
+                                易企秀设计师
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="right con">
+                        <ul>
+                            <li>
+                                2014-2015：
+                            </li>
+                            <li>
+                                易企秀设计
+                            </li>
+                            <li>
+                                2014-2015：
+                            </li>
+                            <li>
+                                设计设计设计
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="swiper-slide swiper-slide3">
+                <ul class="nav">
+                    <li><span>个人信息</span></li>
+                    <li><span>工作经验</span></li>
+                    <li><span>拥有技能</span></li>
+                    <li><span>个人作品</span></li>
+                </ul>
+                <ul class="skill">
+                    <li class="left">
+
+                    </li>
+
+                </ul>
+                <ul class="list jsList" id="item">
+                    <li class="one"></li>
+                    <li class="two" id="two"></li>
+                    <li class="three"></li>
+                    <li class="fore"></li>
+                    <li class="line"></li>
+                    <li class="mulu"> <span>js</span><span>css</span><span>ag</span><span>ph</span></li>
+                </ul>
+            </li>
+            <li class="swiper-slide">
+                <ul class="nav">
+                    <li><span>个人信息</span></li>
+                    <li><span>工作经验</span></li>
+                    <li><span>拥有技能</span></li>
+                    <li><span>个人作品</span></li>
+                </ul>
+            </li>
+        </ul>
+        <!--分页器-->
+        <!--<div class="swiper-button-prev"></div>&lt;!&ndash;导航按钮&ndash;&gt;-->
+        <!--<div class="swiper-button-next"></div>-->
+        <!--<div class="swiper-scrollbar"></div>&lt;!&ndash;滚动条&ndash;&gt;-->
+    </div>
+
+</div>
+
+
+<script src="js/swiper.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
