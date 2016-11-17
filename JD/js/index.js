@@ -71,7 +71,7 @@ btnL.onclick = function () {
 btnR.onclick = function () {
     move();
 };
-document.onmousewheel = function () {
+document.onscroll = function () {
     var scroll = document.scrollTop || body.scrollTop;
     if (scroll > 1000) {
         nav.className = 'move';
