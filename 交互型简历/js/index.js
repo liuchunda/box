@@ -158,6 +158,7 @@ var messageRender = (function () {
                     if (page === 2) return;
                     $message.css('display', 'none');
                     messageMusic.pause();
+                    swiperRender.init(0);
                     //cubeRender.init();
                 }, 200);
             }
@@ -197,6 +198,7 @@ var messageRender = (function () {
 /*--SWIPER--*/
 
 var swiperRender = (function () {
+
     var $swiper = $('#swiper'),
         $makisu = $('#makisu'),
         $return = $swiper.children('.return');
@@ -232,6 +234,7 @@ var swiperRender = (function () {
 
     return {
         init: function (index) {
+
             $swiper.css('display', 'block');
 
             //->初始化SWIPER实现六个页面之间的切换
@@ -245,7 +248,7 @@ var swiperRender = (function () {
         }
     }
 })();
-swiperRender.init(0);//初始化动画
+//初始化动画
 
 var urlObj = window.location.href.queryURLParameter(),
     page = parseFloat(urlObj['page']);

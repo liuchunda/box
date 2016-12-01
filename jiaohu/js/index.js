@@ -159,6 +159,7 @@ var messageRender = (function () {
                     $message.css('display', 'none');
                     messageMusic.pause();
                     //cubeRender.init();
+                    swiperRender.init(0);
                 }, 1800);
             }
         },1800);
@@ -245,7 +246,7 @@ var swiperRender = (function () {
         }
     }
 })();
-swiperRender.init(0);//初始化动画
+
 
 var urlObj = window.location.href.queryURLParameter(),
     page = parseFloat(urlObj['page']);
