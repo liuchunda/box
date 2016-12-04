@@ -459,7 +459,7 @@ body {
     font-style: normal;
 }
 
-/*课程体系*/
+/*技能展示*/
 .page2 {
     background: #FFF9C1;
 }
@@ -544,7 +544,7 @@ body {
     animation: page2Move6 .5s .5s both, page2Shake 1s 1s infinite both;
 }
 
-/*讲师介绍*/
+
 .page3 {
     background: #E45454;
 }
@@ -556,7 +556,9 @@ body {
     margin-left: -1.91rem;
     width: 3.82rem;
     height: 1.41rem;
-    background: url("../img/zf_teacherTip.png") no-repeat;
+    line-height: 1.41rem;
+    color: white;
+    font-size:0.5rem ;
     background-size: 100% 100%;
     opacity: 0;
 }
@@ -610,67 +612,67 @@ body {
     animation: bounceInLeft 1s both;
 }
 
-#page3 .box li:nth-child(1) img {
+#page3 .box li:nth-child(1) li{
     -webkit-animation: bounceIn 1s .1s both;
     animation: bounceIn 1s .1s both;
 }
 
-#page3 .box li:nth-child(2) img {
+#page3 .box li:nth-child(2) li{
     -webkit-animation: bounceIn 1s .2s both;
     animation: bounceIn 1s .2s both;
 }
 
-#page3 .box li:nth-child(3) img {
-    -webkit-animation: bounceIn 1s .3s both;
-    animation: bounceIn 1s .3s both;
-}
+/*#page3 .box li:nth-child(3) img {*/
+    /*-webkit-animation: bounceIn 1s .3s both;*/
+    /*animation: bounceIn 1s .3s both;*/
+/*}*/
 
-#page3 .box li:nth-child(4) img {
-    -webkit-animation: bounceIn 1s .4s both;
-    animation: bounceIn 1s .4s both;
-}
+/*#page3 .box li:nth-child(4) img {*/
+    /*-webkit-animation: bounceIn 1s .4s both;*/
+    /*animation: bounceIn 1s .4s both;*/
+/*}*/
 
-#page3 .box li:nth-child(5) img {
-    -webkit-animation: bounceIn 1s .5s both;
-    animation: bounceIn 1s .5s both;
-}
+/*#page3 .box li:nth-child(5) img {*/
+    /*-webkit-animation: bounceIn 1s .5s both;*/
+    /*animation: bounceIn 1s .5s both;*/
+/*}*/
 
-#page3 .box li:nth-child(6) img {
-    -webkit-animation: bounceIn 1s .6s both;
-    animation: bounceIn 1s .6s both;
-}
+/*#page3 .box li:nth-child(6) img {*/
+    /*-webkit-animation: bounceIn 1s .6s both;*/
+    /*animation: bounceIn 1s .6s both;*/
+/*}*/
 
-#page3 .box li:nth-child(1) .detail {
-    -webkit-animation: fadeIn 1s .1s both;
-    animation: fadeIn 1s .1s both;
-}
+/*#page3 .box li:nth-child(1) .detail {*/
+    /*-webkit-animation: fadeIn 1s .1s both;*/
+    /*animation: fadeIn 1s .1s both;*/
+/*}*/
 
-#page3 .box li:nth-child(2) .detail {
-    -webkit-animation: fadeIn 1s .2s both;
-    animation: fadeIn 1s .2s both;
-}
+/*#page3 .box li:nth-child(2) .detail {*/
+    /*-webkit-animation: fadeIn 1s .2s both;*/
+    /*animation: fadeIn 1s .2s both;*/
+/*}*/
 
-#page3 .box li:nth-child(3) .detail {
-    -webkit-animation: fadeIn 1s .3s both;
-    animation: fadeIn 1s .3s both;
-}
+/*#page3 .box li:nth-child(3) .detail {*/
+    /*-webkit-animation: fadeIn 1s .3s both;*/
+    /*animation: fadeIn 1s .3s both;*/
+/*}*/
 
-#page3 .box li:nth-child(4) .detail {
-    -webkit-animation: fadeIn 1s .4s both;
-    animation: fadeIn 1s .4s both;
-}
+/*#page3 .box li:nth-child(4) .detail {*/
+    /*-webkit-animation: fadeIn 1s .4s both;*/
+    /*animation: fadeIn 1s .4s both;*/
+/*}*/
 
-#page3 .box li:nth-child(5) .detail {
-    -webkit-animation: fadeIn 1s .5s both;
-    animation: fadeIn 1s .5s both;
-}
+/*#page3 .box li:nth-child(5) .detail {*/
+    /*-webkit-animation: fadeIn 1s .5s both;*/
+    /*animation: fadeIn 1s .5s both;*/
+/*}*/
 
-#page3 .box li:nth-child(6) .detail {
-    -webkit-animation: fadeIn 1s .6s both;
-    animation: fadeIn 1s .6s both;
-}
+/*#page3 .box li:nth-child(6) .detail {*/
+    /*-webkit-animation: fadeIn 1s .6s both;*/
+    /*animation: fadeIn 1s .6s both;*/
+/*}*/
 
-/*就业信息*/
+
 .page4 {
     background: #FAC471;
 }
@@ -722,9 +724,11 @@ body {
     opacity: 0;
 }
 
-.page4 .box img {
-    width: 100%;
-    height: 100%;
+.page4 .box ul li {
+    text-align: left;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.3rem;
 }
 
 #page4 p:nth-child(1) {
@@ -747,12 +751,12 @@ body {
     animation: fadeIn 1s 1s both;
 }
 
-/*风采展示*/
-.page5 {
+/*项目*/
+.page3 {
     background: #FBFFE8;
 }
 
-.page5 .tip {
+.page3 .tip {
     position: absolute;
     left: 0;
     bottom: .5rem;
@@ -760,7 +764,7 @@ body {
     height: 1.4rem;
 }
 
-.page5 .tip span:nth-child(1) {
+.page3 .tip span:nth-child(1) {
     position: absolute;
     top: 0;
     left: 1rem;
@@ -771,18 +775,20 @@ body {
     opacity: 0;
 }
 
-.page5 .tip span:nth-child(2) {
+.page3 .tip span:nth-child(2) {
     position: absolute;
     bottom: 0;
     right: 1rem;
     width: 3.22rem;
     height: .38rem;
-    background: url("../img/zf_styleTip2.png") no-repeat;
+    line-height: 0.38rem;
+    font-size: 0.6rem;
+    /*background: url("../img/zf_styleTip2.png") no-repeat;*/
     background-size: 100% 100%;
     opacity: 0;
 }
 
-.page5 img {
+.page3 img {
     position: absolute;
     width: 5rem;
     height: 3.3rem;
@@ -790,160 +796,48 @@ body {
     opacity: 0;
 }
 
-.page5 img:nth-child(1) {
+.page3 img:nth-child(1) {
     left: -100%;
     top: 8%;
     /*-webkit-transform: rotate(9deg);
     transform: rotate(9deg);*/
 }
 
-.page5 img:nth-child(2) {
+.page3 img:nth-child(2) {
     left: 300%;
     top: 25%;
 }
 
-.page5 img:nth-child(3) {
+.page3 img:nth-child(3) {
     left: -100%;
     top: 44%;
 }
 
-#page5 .tip span:nth-child(1) {
+#page3 .tip span:nth-child(1) {
     -webkit-animation: bounceInLeft 1s both;
     animation: bounceInLeft 1s both;
 }
 
-#page5 .tip span:nth-child(2) {
+#page3 .tip span:nth-child(2) {
     -webkit-animation: bounceInRight 1s both;
     animation: bounceInRight 1s both;
 }
 
-#page5 img:nth-child(1) {
+#page3 img:nth-child(1) {
     -webkit-animation: page5Move1 1s .5s both;
     animation: page5Move1 1s .5s both;
 }
 
-#page5 img:nth-child(2) {
+#page3 img:nth-child(2) {
     -webkit-animation: page5Move2 1s 1s both;
     animation: page5Move2 1s 1s both;
 }
 
-#page5 img:nth-child(3) {
+#page3 img:nth-child(3) {
     -webkit-animation: page5Move3 1s 1.5s both;
     animation: page5Move3 1s 1.5s both;
 }
 
-/*联系我们*/
-.page6 {
-    background: #5975FF;
-}
-
-.page6 h2 {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -2.5rem;
-    padding: .3rem 0;
-    width: 5rem;
-    height: 1rem;
-    border-bottom: .02rem solid rgba(255, 255, 255, 0.5);
-    color: #FFF;
-    opacity: 0;
-}
-
-.page6 h2 span {
-    display: block;
-}
-
-.page6 h2 span:nth-child(1) {
-    height: .64rem;
-    line-height: .64rem;
-    font-size: .44rem;
-}
-
-.page6 h2 span:nth-child(2) {
-    height: .35rem;
-    line-height: .35rem;
-    font-size: .24rem;
-}
-
-.page6 .concat {
-    position: absolute;
-    top: 2rem;
-    left: 50%;
-    margin-left: -2.5rem;
-    width: 5rem;
-}
-
-.page6 .concat li {
-    margin-bottom: .4rem;
-    height: 1.6rem;
-    opacity: 0;
-}
-
-.page6 .concat li .icon {
-    float: left;
-    margin-top: .31rem;
-    width: .98rem;
-    height: .98rem;
-    border-radius: 50%;
-}
-
-.page6 .concat li:nth-child(1) .icon {
-    background: url("../img/zf_concatPhone.png") no-repeat;
-    background-size: 100% 100%;
-}
-
-.page6 .concat li:nth-child(2) .icon {
-    background: url("../img/zf_concatAddress.png") no-repeat;
-    background-size: 100% 100%;
-}
-
-.page6 .concat .textCon {
-    float: right;
-    padding: .2rem;
-    width: 3.18rem;
-    height: 1.2rem;
-    background: rgba(255, 255, 255, 0.9);
-    color: rgb(35, 163, 211);
-    font-size: .24rem;
-}
-
-.page6 .concat .textCon span {
-    display: inline-block;
-    min-width: .7rem;
-    font-size: .28rem;
-    vertical-align: bottom;
-}
-
-.page6 img {
-    position: absolute;
-    top: 6rem;
-    left: 50%;
-    margin-left: -2.5rem;
-    width: 5rem;
-    height: 3.6rem;
-    opacity: 0;
-}
-
-#page6 h2 {
-    -webkit-animation: bounceInDown 1s both;
-    animation: bounceInDown 1s both;
-}
-
-#page6 .concat li:nth-child(1) {
-    -webkit-animation: zoomIn 1s .5s both;
-    animation: zoomIn 1s .5s both;
-}
-
-#page6 .concat li:nth-child(2) {
-    -webkit-animation: zoomIn 1s 1s both;
-    animation: zoomIn 1s 1s both;
-}
-
-#page6 img {
-    -webkit-animation: bounceInUp 1s 1.5s both;
-    animation: bounceInUp 1s 1.5s both;
-}
 
 
 
