@@ -2,32 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccf9854c-83c4-46b8-bdb2-4c5199ae9577" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiaohu/img/zf_concatInfo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiaohu/img/zf_cube1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiaohu/img/zf_cube2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiaohu/img/zf_cube3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiaohu/img/zf_cube4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiaohu/img/zf_cube5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiaohu/img/zf_cube6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiaohu/img/zf_emploment.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiaohu/img/zf_return.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiaohu/img/zf_style1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiaohu/img/zf_style2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiaohu/img/zf_style3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiaohu/img/zf_styleTip1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiaohu/img/zf_styleTip2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiaohu/img/zf_teacher1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiaohu/img/zf_teacher2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiaohu/img/zf_teacher3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiaohu/img/zf_teacher4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiaohu/img/zf_teacher5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiaohu/img/zf_teacher6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiaohu/img/zf_teacherTip.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jiaohu/img/zf_messageLogo.png" afterPath="$PROJECT_DIR$/jiaohu/img/zf_messageLogo.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shouji/img/zf_concatInfo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shouji/img/zf_cube1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shouji/img/zf_cube2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shouji/img/zf_cube3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shouji/img/zf_cube4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shouji/img/zf_cube5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shouji/img/zf_cube6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shouji/img/zf_emploment.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shouji/img/zf_teacher1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shouji/img/zf_teacher2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shouji/img/zf_teacher3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shouji/img/zf_teacher4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shouji/img/zf_teacher5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shouji/img/zf_teacher6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shouji/img/zf_teacherTip.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jiaohu/css/index.css" afterPath="$PROJECT_DIR$/jiaohu/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jiaohu/index.html" afterPath="$PROJECT_DIR$/jiaohu/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jiaohu/js/index.js" afterPath="$PROJECT_DIR$/jiaohu/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shouji/index.html" afterPath="$PROJECT_DIR$/shouji/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shouji/js/index.js" afterPath="$PROJECT_DIR$/shouji/js/index.js" />
     </list>
     <ignored path="box.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,74 +40,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="zf_cube4.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jiaohu/img/zf_cube4.png">
+      <file leaf-file-name="zf_messageStudent.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shouji/img/zf_messageStudent.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zf_messageKeyboard.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jiaohu/img/zf_messageKeyboard.png">
+      <file leaf-file-name="zf_phoneDetail.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shouji/img/zf_phoneDetail.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="zf_phoneListen.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jiaohu/img/zf_phoneListen.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zf_styleTip1.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jiaohu/img/zf_styleTip1.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zf_teacher2.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jiaohu/img/zf_teacher2.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28209764">
-              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zf_teacher3.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jiaohu/img/zf_teacher3.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zf_teacher5.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jiaohu/img/zf_teacher5.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zf_style2.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jiaohu/img/zf_style2.jpg">
+        <entry file="file://$PROJECT_DIR$/shouji/img/zf_phoneListen.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="zf_return.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jiaohu/img/zf_return.png">
+        <entry file="file://$PROJECT_DIR$/shouji/img/zf_return.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zf_phoneLogo.png" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shouji/img/zf_phoneLogo.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zf_style2.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shouji/img/zf_style2.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zf_styleTip1.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shouji/img/zf_styleTip1.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zf_styleTip2.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shouji/img/zf_styleTip2.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zf_style3.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shouji/img/zf_style3.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zf_style1.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shouji/img/zf_style1.jpg">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
@@ -134,6 +123,8 @@
         <option value="$PROJECT_DIR$/jiaohu/js/index.js" />
         <option value="$PROJECT_DIR$/jiaohu/css/index.css" />
         <option value="$PROJECT_DIR$/jiaohu/index.html" />
+        <option value="$PROJECT_DIR$/shouji/index.html" />
+        <option value="$PROJECT_DIR$/shouji/js/index.js" />
       </list>
     </option>
   </component>
@@ -173,6 +164,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -181,26 +173,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="box" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="box" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="last_opened_file_path" value="D:/webStormFile" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -234,6 +216,11 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -266,10 +253,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="732" extended-state="0" />
-    <editor active="true" />
+    <frame x="-4" y="-4" width="1374" height="732" extended-state="1" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15613383" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15613383" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -295,60 +282,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/交互型简历/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="160" column="20" selection-start-line="160" selection-start-column="20" selection-end-line="160" selection-end-column="41" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jiaohu/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jiaohu/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/交互型简历/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="160" column="20" selection-start-line="160" selection-start-column="20" selection-end-line="160" selection-end-column="41" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/移动简历/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="8.914286">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/交互型简历/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4231465">
-          <caret line="133" column="11" selection-start-line="133" selection-start-column="11" selection-end-line="133" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jiaohu/CUBE.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -378,9 +311,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -388,7 +318,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.6285715">
           <caret line="741" column="1" selection-start-line="741" selection-start-column="1" selection-end-line="741" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -396,7 +325,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.571428">
           <caret line="166" column="47" selection-start-line="166" selection-start-column="47" selection-end-line="166" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -445,21 +373,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jiaohu/img/zf_teacher5.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jiaohu/img/zf_return.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jiaohu/img/zf_style2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jiaohu/img/zf_styleTip1.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -472,10 +385,173 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28209764">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jiaohu/img/zf_teacher5.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jiaohu/img/zf_style2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jiaohu/img/zf_return.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.74285716">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_concatAddress.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_concatPhone.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_course1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_course.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_course2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_course3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_course4.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_course5.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_course6.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_cubeBg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_cubeTip.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="233" selection-start-line="16" selection-start-column="233" selection-end-line="16" selection-end-column="233" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_messageArrow1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_messageArrow2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_messageChat.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_messageKeyboard.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_messageLogo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_messageStudent.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_phoneDetail.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_phoneListen.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_styleTip1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_styleTip2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_style2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_style3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_style1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_return.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shouji/img/zf_phoneLogo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
