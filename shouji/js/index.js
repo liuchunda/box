@@ -1,4 +1,8 @@
 /*--String.prototype--*/
+var messageMusic = $('#messageMusic')[0];
+var listenMusic = $('#listenMusic')[0],
+    detailsMusic = $('#detailsMusic')[0];
+
 ~function (pro) {
     function queryURLParameter() {
         var reg = /([^?=&#]+)=([^?=&#]+)/g,
@@ -37,11 +41,13 @@ var loadingRender = (function () {
 
                     //->所有图片都已经加载完毕:关闭LOADING,显示PHONE
                     if (step === total) {
-                        if (page === 0) return;
-                        window.setTimeout(function () {
-                            $loading.css('display', 'none');
-                            phoneRender.init();
-                        }, 2000);
+                        listenMusic.oncanplay=function(){
+                            if (page === 0) return;
+                            window.setTimeout(function () {
+                                $loading.css('display', 'none');
+                                phoneRender.init();
+                            }, 2000);
+                        };
                     }
                 }
             });
@@ -58,9 +64,10 @@ var phoneRender = (function () {
         $detailsTouch = $details.children('.touch'),
         $time = $phone.children('.time');
 
-    var listenMusic = $('#listenMusic')[0],
-        detailsMusic = $('#detailsMusic')[0],
-        musicTimer = null;
+    //var listenMusic = $('#listenMusic')[0],
+    //    detailsMusic = $('#detailsMusic')[0],
+    //    musicTimer = null;
+    var musicTimer = null;
 
     //->detailsMusicFn:播放自我介绍的音频,并且计算音频播放的进度
     function detailsMusicFn() {
@@ -125,7 +132,7 @@ var messageRender = (function () {
         total = $list.length,
         bounceTop = 0;
 
-    var messageMusic = $('#messageMusic')[0];
+    //var messageMusic = $('#messageMusic')[0];
 
     //->messageMove:消息列表的发送
     function messageMove() {
