@@ -39,17 +39,11 @@ var loadingRender = (function () {
                     //->所有图片都已经加载完毕:关闭LOADING,显示PHONE
                     if (step === total) {
                         console.log(4);
-                        var listenMusic = $('#listenMusic')[0];
-
-                        listenMusic.oncanplaythrough=function(){
-                            console.log(4);
-                            console.log(1);
                             if (page === 0) return;
                             window.setTimeout(function () {
                                 $loading.css('display', 'none');
                                 phoneRender.init();
                             }, 2000);
-                        };
                     }
                 }
             });
