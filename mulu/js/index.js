@@ -1,4 +1,5 @@
 /*--String.prototype--*/
+
 ~function (pro) {
     function queryURLParameter() {
         var reg = /([^?=&#]+)=([^?=&#]+)/g,
@@ -37,11 +38,18 @@ var loadingRender = (function () {
 
                     //->所有图片都已经加载完毕:关闭LOADING,显示PHONE
                     if (step === total) {
-                        if (page === 0) return;
-                        window.setTimeout(function () {
-                            $loading.css('display', 'none');
-                            phoneRender.init();
-                        }, 2000);
+                        console.log(4);
+                        var listenMusic = $('#listenMusic')[0];
+
+                        listenMusic.oncanplaythrough=function(){
+                            console.log(4);
+                            console.log(1);
+                            if (page === 0) return;
+                            window.setTimeout(function () {
+                                $loading.css('display', 'none');
+                                phoneRender.init();
+                            }, 2000);
+                        };
                     }
                 }
             });
@@ -58,8 +66,7 @@ var phoneRender = (function () {
         $detailsTouch = $details.children('.touch'),
         $time = $phone.children('.time');
 
-    var listenMusic = $('#listenMusic')[0],
-        detailsMusic = $('#detailsMusic')[0],
+    var detailsMusic = $('#detailsMusic')[0],
         musicTimer = null;
 
     //->detailsMusicFn:播放自我介绍的音频,并且计算音频播放的进度
