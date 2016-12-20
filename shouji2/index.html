@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>刘春达简历</title>
+    <meta name="keywords" content="javascript"/>
+    <meta name="description"
+          content=""/>
+
+
+    <!--导入需要的CSS-->
+    <link charset="utf-8" type="text/css" rel="stylesheet" href="css/reset.min.css"/>
+    <link charset="utf-8" type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
+    <link charset="utf-8" type="text/css" rel="stylesheet" href="css/animate.css"/>
+    <link charset="utf-8" type="text/css" rel="stylesheet" href="css/index.css"/>
+
+    <!--计算REM-->
+    <script type="text/javascript">
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 640 * 100 + 'px';
+    </script>
+</head>
+<body>
+<!--LOADING-->
+<section class="loading" id="loading">
+    <div class="title">
+        <h1>刘春达简历</h1>
+
+        <h2>H5场景的交互型简历</h2>
+    </div>
+    <div class="progress">
+        <div class="progressBox"></div>
+    </div>
+</section>
+
+<!--PHONE-->
+<section class="phone" id="phone">
+    <h2>刘春达</h2>
+
+    <div class="time">00:00</div>
+
+    <div class="listen">
+        <div class="move"></div>
+        <div class="touch"></div>
+    </div>
+    <div class="details">
+        <div class="touch"></div>
+    </div>
+    <audio src="audio/bell.mp3"  loop id="listenMusic"></audio>
+    <audio src="audio/say.mp3"  id="detailsMusic"></audio>
+</section>
+
+<!--MESSAGE-->
+<section class="message" id="message">
+    <ul class="messageList">
+        <li class="teacher">
+            经理您好我一名求职的前端开发人员
+            <em></em>
+            <img src="img/zf_messageStudent.png"/>
+        </li>
+        <li class="teacher">
+            看到咱们公司的招聘信息 觉得我可以胜任这份工作
+            <em></em>
+            <img src="img/zf_messageStudent.png"/>
+        </li>
+        <li class="teacher">
+            咱们还在招人吗
+            <em></em>
+            <img src="img/zf_messageStudent.png"/>
+        </li>
+        <li class="student">
+            你好，咱们正在招人。
+            <em></em>
+            <img src="img/zf_messageLogo.png"/>
+        </li>
+        <li class="student">
+            简单介绍一下自己吧
+            <em></em>
+            <img src="img/zf_messageLogo.png"/>
+        </li>
+        <li class="student">
+            合适的话我们找个时间当面谈谈。
+            <em></em>
+            <img src="img/zf_messageLogo.png"/>
+        </li>
+        <li class="teacher">
+           好的
+            <em></em>
+            <img src="img/zf_messageStudent.png"/>
+        </li>
+        <li class="teacher">
+           请看一下我的个人介绍吧。
+            <em></em>
+            <img src="img/zf_messageStudent.png"/>
+        </li>
+    </ul>
+    <div class="keyBoard">
+        <span class="textTip"></span>
+        <span class="submit"></span>
+    </div>
+    <audio src="audio/music.mp3"  loop id="messageMusic"></audio>
+</section>
+
+
+<!--SWIPER-->
+<section class="swiper" id="swiper">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide page1">
+                <dl id="makisu">
+                    <dt>基本信息</dt>
+                    <dd><em>01</em><a href="#">姓名:刘春达</a></dd>
+                    <dd><em>02</em><a href="#">籍贯:河北省沧州市</a></dd>
+                    <dd><em>03</em><a href="#">出生年月:1992 10 20</a></dd>
+                    <dd><em>04</em><a href="#">学历:本科</a></dd>
+                    <dd><em>05</em><a href="#">专业:计算机科学与技术</a></dd>
+                    <dd><em>0   6</em><a href="#">联系方式:15127662623</a></dd>
+                    <dd><em>07</em><a href="#">爱好:爬山、看书、三国杀</a></dd>
+                    <dd><em>08</em><a href="#">个人评价:积极乐观 抗压强 学习能力强</a></dd>
+                    <dd><em>09</em><a href="#">求职意向:前端开发</a></dd>
+                </dl>
+            </div>
+
+            <!--技能展示-->
+            <div class="swiper-slide page2">
+                <h2>技能展示</h2>
+
+                <div class="box">
+                    <img src="img/zf_course.png" alt=""/>
+                    <img src="img/zf_course1.png" alt=""/>
+                    <img src="img/zf_course2.png" alt=""/>
+                    <img src="img/zf_course3.png" alt=""/>
+                    <img src="img/zf_course4.png" alt=""/>
+                    <img src="img/zf_course5.png" alt=""/>
+                    <img src="img/zf_course6.png" alt=""/>
+                </div>
+            </div>
+
+            <!--项目展示-->
+            <div class="swiper-slide page3">
+                <img src="img/zf_style1.jpg"/>
+               <img src="img/zf_style2.jpg"/>
+                <img src="img/zf_style3.jpg"/>
+                <div class="tip">
+                    <span></span>
+                    <span>项目展示</span>
+                </div>
+            </div>
+            <!--就业信息-->
+            <div class="swiper-slide page4">
+                <p>
+                    <span>快速</span>
+                    学习新技术
+                </p>
+
+                <p>
+                    提前<br/>
+                    <span>完成工作任务</span>
+                </p>
+
+                <h2>个人评价</h2>
+
+                <div class="box">
+                    <ul>
+                        <li>1. 精通原生JavaScript、jquery。</li>
+                        <li>2. 合理使用css和js。</li>
+                        <li>3. 掌握h5 css3响应式移动端开发。</li>
+                        <li>4. 掌握less、webpack gulp</li>
+                        <li>5. 掌握angularjs react开发框架。</li>
+                        <li>6. 掌握node.js express。</li>
+                        <li>7. 掌握swiper zpeto。</li>
+                        <li>8.使用git coding。</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--导入需要的JS-->
+<script charset="utf-8" type="text/javascript" src="js/zepto.min.js"></script>
+<script charset="utf-8" type="text/javascript" src="js/swiper.min.js"></script>
+<script charset="utf-8" type="text/javascript" src="js/makisu.min.js"></script>
+<script charset="utf-8" type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
