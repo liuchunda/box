@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script>
+        //移动适配-设置各个设备根元素字体大小
+        var desW = 640;
+        var winW = document.documentElement.clientWidth;
+        var desWfontSize = 100;
+        document.documentElement.style.fontSize = winW/desW*desWfontSize+"px";
+    </script>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/answer.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="content">
+        <p class="tag" id="tag">第一题</p>
+        <div class="title" id="title"></div>
+        <img src="" class="imgs" id="bg">
+        <ul id="list" class="list">
+            <li fl="a">A</li>
+            <li fl="b">B</li>
+            <li fl="c">C</li>
+            <li fl="d">D</li>
+        </ul>
+    </div>
+</div>
+<script src="js/answer.js"></script>
+</body>
+</html>

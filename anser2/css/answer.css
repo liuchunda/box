@@ -1,0 +1,69 @@
+.wrap{
+    padding-top: 1.25rem;
+    color: #f1f4f7;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background:url("../img/answer-bg.png")no-repeat;
+    background-size:100%;
+}
+.wrap .content{
+    position: relative;
+    border-radius: 5px;
+    width: 5.53rem;
+    height: 8.02rem;
+    margin: 0 auto;
+    /*-webkit-box-shadow:inset 0 0 20px #0b598e;*/
+    /*box-shadow:inset 0 0 23px #0b598e;*/
+}
+.wrap .content .title{
+    position: absolute;
+    top:0.70rem;
+    left: 0.4rem;
+    width: 4.93rem;
+    height: 1rem;
+    line-height: 0.3rem;
+    font-size: 0.23rem;
+    /*background-color: red;*/
+}
+.wrap .content .imgs{
+    position: absolute;
+    top:1.82rem;
+    left: 0.34rem;
+    width: 4.82rem;
+    height: 3.06rem;
+    background-color: #f1f4f7;
+}
+.wrap .content .tag{
+    text-align: center;
+    line-height: 0.4rem;
+    margin: -0.2rem 1.85rem;
+    border-radius: 3px;
+    height: 0.4rem;
+    width: 1.91rem;
+    border: 1px solid #04bed0;
+    font-size: 0.23rem;
+    font-family: "仿宋 Std R";
+    background: -webkit-linear-gradient(#249fd6, #00447c);
+    background: linear-gradient(#249fd6, #00447c);
+}
+.wrap .content .list{
+    position: absolute;
+    bottom: 0.36rem;
+    left: 0.18rem;
+    width: 5.12rem;
+    height: 2.45rem;
+    /*background-color: #0b598e;*/
+}
+.wrap .content .list li{
+    text-align: center;
+    width:100%;
+    height: 0.36rem;
+    /*padding-left:0.3rem;*/
+    line-height: 0.4rem;
+    margin-top: 0.26rem;
+    /*margin-bottom: 0.22rem;*/
+    border: 1px solid #b0c9db;
+    -webkit-box-shadow: 0 0 5px #b0c9db;
+    box-shadow: 0 0 5px #b0c9db;
+}
