@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script>
+        //移动适配-设置各个设备根元素字体大小
+        var desW = 640;
+        var winW = document.documentElement.clientWidth;
+        var desWfontSize = 100;
+        document.documentElement.style.fontSize = winW/desW*desWfontSize+"px";
+    </script>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/succeed.css">
+</head>
+<body>
+<div class="wrap">
+    <img src="./img/succeed-star.png" class="star">
+    <img src="./img/succeed-fly.png" class="fly">
+    <img src="./img/succeed-text.png" class="hint">
+    <img src="./img/succeed-person.png" class="person">
+    <img src="./img/share.png" class="share" id="share-img">
+    <ul class="text">
+        <li class="text1"><a href="./index.html">在来一次</a></li>
+        <li class="text2" id="share"><a href="##">分享</a></li>
+        <li class="text3"><a href="##">中国网信网</a></li>
+    </ul>
+</div>
+<script>
+    var share=document.getElementById('share');
+    var shareImg=document.getElementById('share-img');
+    share.onclick=function(){
+        shareImg.className='show';
+    }
+</script>
+</body>
+</html>

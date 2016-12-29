@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,li{
+            list-style: none;
+        }
+        .list li{
+            width: 300px;
+            border: 1px solid red;
+            margin: 10px;
+            padding: 0px;
+        }
+        .list p{
+            background-color: aqua;
+            text-align: left;
+            height: 30px;
+            line-height: 30px;
+            display: inline-block;
+            margin: 10px
+        }
+        .list div{
+            display: inline-block;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="list" id="list">
+            <li id="i"><div></div><p>卡洛斯的</p></li>
+            <li><div></div><p>按时</p></li>
+            <li><div></div><p>爱是极好的看见好看教案</p></li>
+            <li><div></div><p>艾克</p></li>
+        </ul>
+    </div>
+    <script>
+        var list=document.getElementById('list');
+        var l=document.getElementById('i');
+        var inner=list.getElementsByTagName('p');
+        var step=list.getElementsByTagName('div');
+        var width=parseInt(window.getComputedStyle(l,null).width);
+        console.log(width);
+        console.log(inner);
+        var ling=0;
+        for(var i=0;i<inner.length;i++){
+            if (ling<=parseInt(window.getComputedStyle(inner[i],null).width)){
+                ling=parseInt(window.getComputedStyle(inner[i],null).width);
+            };
+            console.log(window.getComputedStyle(inner[i],null).width)
+        };
+        console.log(ling);
+        console.log(width-ling);
+        var cur=(width-ling)/2;
+        for(var i=0;i<step.length;i++){
+            step[i].style.width=cur+'px';
+        }
+    </script>
+</body>
+</html>
