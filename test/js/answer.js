@@ -45,6 +45,7 @@ function click(e){
             }
         }
         if (answer!=aryAnswer[flag2]){
+            window.setTimeout(window.location.href=('./fault.html'),500);
             window.location.href=('./fault.html');
             return false;
         }
