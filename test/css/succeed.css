@@ -14,8 +14,8 @@
     height: 4.5rem;
     top:0.88rem;
     left: 0.3rem;
-    -webkit-animation:fadeIn 1.8s 0s ease infinite both;
-    animation:fadeIn 1.8s 0s ease infinite both;
+    -webkit-animation:fadeIn 1.8s 0.2s ease infinite both;
+    animation:fadeIn 1.8s 0.2s ease infinite both;
 }
 .wrap .fly{
     width: 1rem;
@@ -37,8 +37,8 @@
     height: 2.3rem;
     top:2.62rem;
     left: 0.93rem;
-    -webkit-animation:fadeOutRight 0.4s 0s ease both;
-    animation:fadeOutRight 0.4s 0s ease both;
+    -webkit-animation:fadeOutRight 0.4s 0.2s ease both;
+    animation:fadeOutRight 0.4s 0.2s ease both;
 }
 .wrap .share{
     display: none;
@@ -79,8 +79,8 @@
     font-family: "MicrosoftYaHei Adobe 宋体 Std L";
 }
 .wrap .text1{
-    -webkit-animation:pulse 0.5s 0s ease both;
-    animation:pulse 0.5s 0s ease both;
+    -webkit-animation:pulse 0.5s 0.2s ease both;
+    animation:pulse 0.5s 0.2s ease both;
 }
 .wrap .text2{
     -webkit-animation:pulse 0.6s 0.5s ease both;
