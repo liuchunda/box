@@ -74,8 +74,8 @@
       <file leaf-file-name="fault.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fault.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.257143">
-              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="25" selection-end-column="51" />
+            <state vertical-scroll-proportion="-8.971429">
+              <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -104,8 +104,8 @@
       <file leaf-file-name="succeed.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/succeed.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.52554744">
-              <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.28832117">
+              <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -142,10 +142,10 @@
         <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/js/answer.js" />
         <option value="$PROJECT_DIR$/css/answer.css" />
-        <option value="$PROJECT_DIR$/fault.html" />
-        <option value="$PROJECT_DIR$/succeed.html" />
         <option value="$PROJECT_DIR$/css/succeed.css" />
         <option value="$PROJECT_DIR$/css/fault.css" />
+        <option value="$PROJECT_DIR$/succeed.html" />
+        <option value="$PROJECT_DIR$/fault.html" />
       </list>
     </option>
   </component>
@@ -606,14 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fault.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.257143">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="25" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/succeed.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.457143">
@@ -654,10 +646,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fault.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.971429">
+          <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/succeed.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52554744">
-          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.28832117">
+          <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
           <folding />
         </state>
       </provider>
