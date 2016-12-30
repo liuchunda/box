@@ -23,17 +23,24 @@
     <img src="./img/succeed-person.png" class="person">
     <img src="./img/share.png" class="share" id="share-img">
     <ul class="text">
-        <li class="text1"><a href="./index.html">在来一次</a></li>
-        <li class="text2" id="share"><a href="##">分享</a></li>
-        <li class="text3"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwMjU0MjIyNw==&scene=124#wechat_redirect
-">中国网信网</a></li>
+        <li class="text1"><a href="##" id="local-jump">在来一次</a></li>
+        <li class="text2" id="share-jump"><a href="##">分享</a></li>
+        <li class="text3"><a href="##" id="href-jump">中国网信网</a></li>
     </ul>
 </div>
 <script>
-    var share=document.getElementById('share');
+    var shareJump=document.getElementById('share-jump');
+    var localJump=document.getElementById('local-jump');
+    var hrefJump=document.getElementById('href-jump');
     var shareImg=document.getElementById('share-img');
-    share.onclick=function(){
+    shareJump.onclick=function(){
         shareImg.className='show';
+    };
+    localJump.onclick=function(){
+        window.location.href='./index.html';
+    };
+    hrefJump.onclick=function(){
+        window.location.href='https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwMjU0MjIyNw==&scene=124#wechat_redirect ';
     }
 </script>
 </body>
