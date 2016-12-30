@@ -55,14 +55,6 @@
     color: #ffffff;
     font-family: "MicrosoftYaHei Adobe 宋体 Std L";
 }
-.wrap .text li a{
-    display: block;
-    width: 100%;
-    height: 0.66rem;
-    line-height: 0.66rem;
-    color: #ffffff;
-    font-family: "MicrosoftYaHei Adobe 宋体 Std L";
-}
 .wrap .text1{
     -webkit-animation:pulse 0.5s 0.2s ease both;
     animation:pulse 0.5s 0.2s ease both;
