@@ -41,7 +41,6 @@
     font-family: "MicrosoftYaHei Adobe 宋体 Std L";
     font-size: 0.28rem;
     color: #ffffff;
-
 }
 .wrap .text li{
     background: -webkit-linear-gradient(#26a5dc, #00447c);
@@ -49,11 +48,11 @@
     border-radius: 0.04rem;
     width: 3.69rem;
     height: 0.66rem;
+    line-height: 0.66rem;
     border: 0.02rem solid #00ffff;
     margin-bottom: 0.33rem;
-    line-height: 0.66rem;
-    color: #ffffff;
     font-family: "MicrosoftYaHei Adobe 宋体 Std L";
+    color: #ffffff;
 }
 .wrap .text1{
     -webkit-animation:pulse 0.5s 0.2s ease both;
@@ -67,10 +66,6 @@
     -webkit-animation:pulse 0.9s 0.9s ease both;
     animation:pulse 0.9s 0.9s ease both;
 }
-
-
-
-
 
 @-webkit-keyframes fadeInDown{
     0%{opacity:0;
