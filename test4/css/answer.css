@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'MicrosoftYaHei';
+    src: url('MicrosoftYaHei.eot'); /* IE9 Compat Modes */
+    src: url('MicrosoftYaHei.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('MicrosoftYaHei.woff') format('woff'), /* Modern Browsers */
+    url('MicrosoftYaHei.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('MicrosoftYaHei.svg#MicrosoftYaHei') format('svg'); /* Legacy iOS */
+}
+.wrap{
+    padding-top: 1.25rem;
+    color: #f1f4f7;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background:url("../img/answer-bg.jpg")no-repeat;
+    background-size:100%;
+    font-family: MicrosoftYaHei;
+}
+.wrap .content{
+    position: relative;
+    border-radius: 5px;
+    width: 5.53rem;
+    height: 8.02rem;
+    margin: 0 auto;
+}
+.wrap .content .title{
+    position: absolute;
+    top:0.70rem;
+    left: 0.4rem;
+    width: 4.93rem;
+    height: 1rem;
+    line-height: 0.3rem;
+    font-size: 0.23rem;
+    /*float: left;*/
+    word-break:break-all;
+    /*background-color: red;*/
+}
+.wrap .content .imgs{
+    position: absolute;
+    top:1.82rem;
+    left: 0.34rem;
+    width: 4.82rem;
+    height: 3.06rem;
+    background-color: #f1f4f7;
+}
+.wrap .content .tag{
+    text-align: center;
+    line-height: 0.4rem;
+    margin: -0.2rem 1.85rem;
+    border-radius: 3px;
+    height: 0.4rem;
+    width: 1.91rem;
+    border: 1px solid #04bed0;
+    font-size: 0.23rem;
+    font-family: "MicrosoftYaHei";
+    background: -webkit-linear-gradient(#249fd6, #00447c);
+    background: linear-gradient(#249fd6, #00447c);
+}
+.wrap .content .list{
+    position: absolute;
+    bottom: 0.36rem;
+    left: 0.18rem;
+    width: 5.12rem;
+    height: 2.45rem;
+    /*background-color: #0b598e;*/
+}
+.wrap .content .y{
+    background:url("../img/answer-yes.png")no-repeat 4.5rem 0.03rem;
+    background-size:0.4rem;
+}
+.wrap .content .n{
+    background:url("../img/answer-no.png")no-repeat 4.5rem 0.03rem;
+    background-size:0.3rem;
+}
+.wrap .content .list p{
+    display: inline-block;
+    /*width: 1rem;*/
+    /*background-color: red;*/
+}
+.wrap .content .list span{
+    text-align: left;
+    display: inline-block;
+    height: 0.36rem;
+    /*padding-left:0.3rem;*/
+    line-height: 0.36rem;
+}
+.wrap .content .list li{
+    width:100%;
+    height: 0.36rem;
+    /*padding-left:0.3rem;*/
+    line-height: 0.4rem;
+    margin-top: 0.26rem;
+    /*margin-bottom: 0.22rem;*/
+    border: 1px solid #b0c9db;
+    -webkit-box-shadow: 0 0 5px #b0c9db;
+    box-shadow: 0 0 5px #b0c9db;
+}
