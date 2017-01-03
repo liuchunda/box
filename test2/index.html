@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title style="font-size: 12px;">网信达人召集令！网信哥喊你来答题（闯关）</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script>
+        //移动适配-设置各个设备根元素字体大小
+        var desW = 640;
+        var winW = document.documentElement.clientWidth;
+        var desWfontSize = 100;
+        document.documentElement.style.fontSize = desWfontSize/desW*winW+"px";
+    </script>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="btn">
+            <div class="btn-text" id="index-btn"></div>
+            <img src="./img/index-arrows.png" class="arrows">
+        </div>
+        <img src="./img/index-person.png" class="person" id="person-btn">
+        <img src="./img/index-detail-text.png" class="detail-text">
+        <img src="./img/index-tag1-text.png" class="tag1-text">
+        <img src="./img/index-teg2-text.png" class="tag2-text">
+    </div>
+    <script>
+        var personBtn=document.getElementById('person-btn');
+        personBtn.onclick=function(){
+            window.location.href='./answer.html?'+'v='+new Date().getTime();
+        };
+    </script>
+</body>
+</html>
