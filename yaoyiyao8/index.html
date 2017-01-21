@@ -25,12 +25,17 @@
                 <img src="./img/slide1-bottom-text.png" class="bottom-text">
                 <img src="./img/slide1-bottom-hand.png" class="bottom-hand">
             </div>
-            <div class="swiper-slide slide2 move2" id="slide2">
-
+            <div class="swiper-slide slide2" id="slide2">
+                <img src="./img/slide2-sign.png" class="sign">
+                <img src="./img/slide2-lonely.png" class="lonely">
             </div>
             <div class="swiper-slide slide3 move3" id="slide3">
+                <div class="content">
+                    <img src="img/slide3-a.jpg" class="imgs" id="imgs">
+                </div>
+                <img src="img/share.png" class="share" id="share">
                 <img src="./img/slide3-again.png" class="again" id="jump">
-                <img src="./img/slide3-again-next.png" class="again-next">
+                <img src="./img/slide3-again-next.png" class="again-next" id="shareClick">
             </div>
         </div>
     </div>
@@ -38,20 +43,31 @@
 </body>
 <script src="js/swiper.min.js"></script>
 <script>
+    var share=document.getElementById('share');
+    var shareClick=document.getElementById('shareClick');
     var slide1=document.getElementById('slide1');
     var slide2=document.getElementById('slide2');
     var slide3=document.getElementById('slide3');
     var jump=document.getElementById('jump');
+    var imgs=document.getElementById('imgs');
+    var ary=['img/slide3-a.jpg','img/slide3-b.jpg','img/slide3-c.jpg','img/slide3-d.jpg','img/slide3-e.jpg','img/slide3-f.jpg','img/slide3-g.jpg','img/slide3-h.jpg'];
+    var number=0;
     var mySwiper = new Swiper('.swiper-container', {
 //        direction:"fade",
         effect : 'fade',
 //        onlyExternal : true
     });
+    shareClick.onclick=function(){
+        share.style.display='block';
+    };
     jump.onclick=function(){
-        mySwiper.slideTo(0, 1000, false)
+        slide2.className='swiper-slide slide2';
+        mySwiper.slideTo(0, 300, false);
+        share.style.display='none';
+        window.addEventListener('devicemotion',deviceMotionHandler,false);
     };
     function step(){
-        mySwiper.slideTo(2, 1000, false)
+        mySwiper.slideTo(2, 300, false)
     }
     if (window.DeviceMotionEvent) {
         window.addEventListener('devicemotion',deviceMotionHandler,false);
@@ -61,13 +77,13 @@
     //获取加速度信息
     //通过监听上一步获取到的x, y, z 值在一定时间范围内的变化率，进行设备是否有进行晃动的判断。
     //而为了防止正常移动的误判，需要给该变化率设置一个合适的临界值。
-    var SHAKE_THRESHOLD = 4000;
+    var SHAKE_THRESHOLD = 5000;
     var last_update = 0;
     var x, y, z, last_x = 0, last_y = 0, last_z = 0;
     function deviceMotionHandler(eventData) {
         var acceleration =eventData.accelerationIncludingGravity;
         var curTime = new Date().getTime();
-        if ((curTime-last_update)> 10) {
+        if ((curTime-last_update)>15) {
             var diffTime = curTime -last_update;
             last_update = curTime;
             x = acceleration.x;
@@ -75,8 +91,15 @@
             z = acceleration.z;
             var speed = Math.abs(x +y + z - last_x - last_y - last_z) / diffTime * 10000;
             if (speed > SHAKE_THRESHOLD) {
+                window.removeEventListener('devicemotion',deviceMotionHandler,false);
+                slide2.className='swiper-slide slide2 move2';
+                number=parseInt(Math.random()*8);
+                if (number==8){
+                    number=7;
+                }
+                imgs.src=ary[number];
                 mySwiper.slideTo(1, 1000, false);
-                window.setTimeout(step,3000);
+                window.setTimeout(step,2000);
             }
             last_x = x;
             last_y = y;
