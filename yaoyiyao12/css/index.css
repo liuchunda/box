@@ -64,25 +64,28 @@ html,body{
     -webkit-animation:tada 1.2s 0.3s ease infinite both;
     animation:tada 1.2s 0.3s ease infinite both;
 }
-.move2 img{
+.move2 .rock{
+    width: 2.8rem;
+    height: 5.0rem;
+    position: absolute;
+    top: 2.1rem;
+    left: 1.7rem;
+    -webkit-animation:tada 1.2s 0.3s ease  both;
+    animation:tada 1.2s 0.3s ease  both;
+}
+.move2 .rock img{
     position: absolute;
 }
-.move2 .sign{
-    width:3.2rem;
-    top: 2.1rem;
-    left: 1.5rem;
-    -webkit-animation:tada 1s 0.3s ease infinite both;
-    animation:tada 1s 0.3s ease infinite both;
+.move2 .rock .rock-mono{
+    width: 0.72rem;
+    top: 0rem;
+    left: 0.97rem;
+    -webkit-animation:flip 1s 1.2s linear both;
+    animation:flip 1s 1.2s linear both;
 }
-.move2 .lonely{
-    opacity: 0;
-    width:1.7rem;
-    top: 3.1rem;
-    left: 4.35rem;
-    -webkit-animation:flip 2s 1.2s ease both;
-    animation:flip 2s 1.2s ease both;
-}
-.move3 img{
+.move2 .rock .rock-rock{
+    width: 2.8rem;
+}.move3 img{
     position: absolute;
 }
 .move3 .again{
@@ -122,32 +125,56 @@ html,body{
 }
 
 @-webkit-keyframes flip{
-    0%{opacity: 1;
-        -webkit-transform:perspective(400px) rotateY(0deg);
-        -webkit-animation-timing-function:ease-out}
-    40%{-webkit-transform:perspective(400px) translateZ(150px) rotateY(170deg);
-        -webkit-animation-timing-function:ease-out}
-    50%{-webkit-transform:perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
-        -webkit-animation-timing-function:ease-in}
-    80%{-webkit-transform:perspective(400px) rotateY(360deg) scale(.95);
-        -webkit-animation-timing-function:ease-in}
+    0%{
+        -webkit-transform:perspective(400px) translateX(0rem) translateY(0rem)scale(1)rotateY(0deg);
+    }
+    25%{
+        -webkit-transform:perspective(400px) translateX(0.5rem) translateY(-2rem)scale(1.3)rotateY(190deg);
+    }
+    40%{
+        -webkit-transform:perspective(400px) translateX(1.0rem) translateY(-2rem)scale(1.2)rotateY(190deg);
+    }
+    50%{
+        z-index: 2;
+        -webkit-transform:perspective(400px) translateX(1.2rem) translateY(-2.2rem)scale(1.5)rotateY(190deg);
+    }
+    60%{
+        -webkit-transform:perspective(400px) translateX(1.5rem) translateY(-2rem)scale(1.5)rotateY(190deg);
+    }
+    80%{
+        -webkit-transform:perspective(400px) translateX(1.7rem) translateY(-1.8rem)scale(1.5)rotateY(450deg);
+    }
     100%{
-        opacity: 0;
-        -webkit-transform:perspective(400px) scale(1);
-        -webkit-animation-timing-function:ease-in}
+        z-index: 2;
+        -webkit-transform:perspective(400px) translateX(1.9rem) translateY(1.7rem)scale(1.8)rotateY(540deg);
+    }
 }
-@-moz-keyframes flip{
-    0%{transform:perspective(400px) rotateY(0deg);
-        animation-timing-function:ease-out}
-    40%{transform:perspective(400px) translateZ(150px) rotateY(170deg);
-        animation-timing-function:ease-out}
-    50%{transform:perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
-        animation-timing-function:ease-in}
-    80%{transform:perspective(400px) rotateY(360deg) scale(.95);
-        animation-timing-function:ease-in}
-    100%{transform:perspective(400px) scale(1);
-        animation-timing-function:ease-in}
+@keyframes flip{
+    0%{
+        transform:perspective(400px) translateX(0rem) translateY(0rem)scale(1)rotateY(0deg);
+    }
+    25%{
+        transform:perspective(400px) translateX(0.5rem) translateY(-2rem)scale(1.3)rotateY(190deg);
+    }
+    40%{
+        transform:perspective(400px) translateX(1.0rem) translateY(-2rem)scale(1.2)rotateY(190deg);
+    }
+    50%{
+        z-index: 2;
+        transform:perspective(400px) translateX(1.2rem) translateY(-2.2rem)scale(1.5)rotateY(190deg);
+    }
+    60%{
+        transform:perspective(400px) translateX(1.5rem) translateY(-2rem)scale(1.5)rotateY(190deg);
+    }
+    80%{
+        transform:perspective(400px) translateX(1.7rem) translateY(-1.8rem)scale(1.5)rotateY(450deg);
+    }
+    100%{
+        z-index: 2;
+        transform:perspective(400px) translateX(1.9rem) translateY(1.7rem)scale(1.8)rotateY(540deg);
+    }
 }
+
 
 
 @-webkit-keyframes bounce{/*弹起*/

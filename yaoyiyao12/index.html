@@ -26,8 +26,10 @@
                 <img src="./img/slide1-bottom-hand.png" class="bottom-hand">
             </div>
             <div class="swiper-slide slide2" id="slide2">
-                <img src="./img/slide2-sign.png" class="sign">
-                <img src="./img/slide2-lonely.png" class="lonely">
+                <div class="rock" id="rock">
+                    <img src="./img/slide2-rock-mono.png" class="rock-mono">
+                    <img src="./img/slide2-rock.png" class="rock-rock">
+                </div>
             </div>
             <div class="swiper-slide slide3 move3" id="slide3">
                 <div class="content">
@@ -55,7 +57,7 @@
     var mySwiper = new Swiper('.swiper-container', {
 //        direction:"fade",
         effect : 'fade',
-        onlyExternal : true
+//        onlyExternal : true
     });
     shareClick.onclick=function(){
         share.style.display='block';

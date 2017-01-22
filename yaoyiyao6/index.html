@@ -55,11 +55,10 @@
     var rock=document.getElementById('rock');
     var ary=['img/slide3-a.jpg','img/slide3-b.jpg','img/slide3-c.jpg','img/slide3-d.jpg','img/slide3-e.jpg','img/slide3-f.jpg','img/slide3-g.jpg','img/slide3-h.jpg'];
     var number=0;
-    rock.style.display='none';
     var mySwiper = new Swiper('.swiper-container', {
 //        direction:"fade",
         effect : 'fade',
-        onlyExternal : true
+//        onlyExternal : true
 
     });
     shareClick.onclick=function(){
@@ -68,7 +67,6 @@
     jump.onclick=function(){
         slide2.className='swiper-slide slide2';
         slide1.className='swiper-slide slide1 move1';
-        rock.style.display='none';
         mySwiper.slideTo(0, 300, false);
         share.style.display='none';
         window.addEventListener('devicemotion',deviceMotionHandler,false);
