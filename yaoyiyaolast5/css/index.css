@@ -1,4 +1,4 @@
-html,body{
+﻿html,body{
     width: 100%;
     height: 100%;
     overflow: hidden;/*去掉默认的滚动的条*/
@@ -34,7 +34,7 @@ html,body{
     width: 4.60rem;
 }
 .move1 .icon{
-    width: 0.2rem;
+    height: 0.2rem;
     opacity: 0;
 }
 .move1 img{
