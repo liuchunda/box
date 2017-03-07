@@ -1,0 +1,14 @@
+index.js是封装的一个方法  最后把这个方法‘loader’挂载到了window上‘window.imgLoader = loader;’
+
+用的时候在html中引入这个js文件然后就可以在html中用这个方法了（也可以把这个方法复制到自己的js中）,用法如下imgLoader这个函数有三个参数，第一个参数是要加载的图片的url数组。第二个参数是一个回调函数，每当数组中的图片加载一个这个函数就执行一次，这个函数中的参数是图片加载的百分比（可以输出出来看一下）。第三个参数是每张图片的加载时限，比如一个图片好几兆、那当超过这个时限时可能还没加载好 就放弃这个图片避免死页面
+
+ imgLoader(['./img/first.jpg', './img/last.jpg', './img/share.png','./img/slide1-bg.jpg','./img/slide1-tag.png','img/slide2-sign.png','img/slie3-b.jpg','img/slide3-c.jpg'], function(percentage){
+                              bg.style.left=-100+percentage*100+'%';
+                              if (percentage>=1){
+                                  window.setTimeout(fn,100);
+                                  function fn(){
+                                      box.style.display='none'
+                                  }
+                              }
+                              console.log(percentage);
+                          },1000);

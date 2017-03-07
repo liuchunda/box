@@ -1,0 +1,31 @@
+body,html,.swiper-container,.swiper-wrapper,.swiper-slide{
+    height: 100%;
+    width: 100%;
+}
+body{
+    position: relative;
+}
+.swiper-slide{
+    /*background-color: yellow;*/
+    overflow: hidden;
+    background-color: #00c0a5;
+}
+.slide1{
+    /*background: url("../img/slide1.jpg")no-repeat;*/
+    /*background-size:100%;*/
+
+}
+.swiper-slide img{
+    height: 100%;
+    /*width: 100%;*/
+}
+
+
+
+
+
+
+
+
+
+

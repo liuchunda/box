@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>Title</title>
+    <script>
+        //移动适配-设置各个设备根元素字体大小
+        var desW = 640;
+        var winW = document.documentElement.clientWidth;
+        var desWfontSize = 100;
+        document.documentElement.style.fontSize = winW/desW*desWfontSize+"px";
+    </script>
+    <style>
+        body{
+            position: relative;
+        }
+        .box{
+              position:absolute;
+              top:0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              overflow: hidden;
+              background-color: grey;
+              z-index: 10;
+          }
+        .box .line{
+            position: absolute;
+            height:0.3rem;
+            width: 5rem;
+            background-color: whitesmoke;
+            top:6rem;
+            left: 0.8rem;
+            border-radius: 0.25rem;
+            overflow: hidden;
+        }
+        .bg{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: -100%;
+            /*background: linear-gradient(45deg, #5CB85C 15%, #74C274 15%, #74C274 25%, #5CB85C 25%, #5CB85C 35%, #74C274 35%, #74C274 45%, #5CB85C 45%, #5CB85C 55%, #74C274 55%, #74C274 65%, #5CB85C 65%, #5CB85C 75%, #74C274 75%, #74C274 85%, #5CB85C 85%, #5CB85C 95%, #74C274 95%, #74C274 100%);*/
+            border-radius: 25px;
+            background: linear-gradient(45deg, #5CB85C 25%, #74C274 25%, #74C274 50%, #5CB85C 50%, #5CB85C 75%, #74C274 75%)repeat;
+            background-size: 30px 30px;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="css/reset.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./img/slide1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slide2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slide3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slide4.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slide5.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slide6.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slide7.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slide8.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slide9.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slide10.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slide11.jpg" alt=""></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<div class="box" id="box">
+    <div class="line">
+        <div class="bg" id="bg">
+
+        </div>
+    </div>
+</div>
+<script src="js/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container',{
+        pagination : '.swiper-pagination',
+        paginationType:'fraction',
+        effect:'fade',
+        loop:true
+    });
+    (function () {
+        function isArray(obj) {
+            return Object.prototype.toString.call(obj) === '[object Array]';
+        }
+
+        /**
+         * @param imgList 要加载的图片地址列表，['aa/asd.png','aa/xxx.png']
+         * @param callback 每成功加载一个图片之后的回调，并传入“已加载的图片总数/要加载的图片总数”表示进度
+         * @param timeout 每个图片加载的超时时间，默认为5s
+         */
+        var loader = function (imgList, callback, timeout) {
+            timeout = timeout || 5000;
+            imgList = isArray(imgList) && imgList || [];
+            callback = typeof(callback) === 'function' && callback;
+
+            var total = imgList.length,
+                    loaded = 0,
+                    imgages = [],
+                    _on = function () {
+                        loaded < total && (++loaded, callback && callback(loaded / total));
+                    };
+
+            if (!total) {
+                return callback && callback(1);
+            }
+
+            for (var i = 0; i < total; i++) {
+                imgages[i] = new Image();
+                imgages[i].onload = imgages[i].onerror = _on;
+                imgages[i].src = imgList[i];
+            }
+
+            /**
+             * 如果timeout * total时间范围内，仍有图片未加载出来（判断条件是loaded < total），通知外部环境所有图片均已加载
+             * 目的是避免用户等待时间过长
+             */
+            setTimeout(function () {
+                loaded < total && (loaded = total, callback && callback(loaded / total));
+            }, timeout * total);
+
+        };
+
+        "function" === typeof define && define.cmd ? define(function () {
+            return loader;
+        }) : window.imgLoaderS = loader;//把这个方法挂载到window上
+    })();
+
+
+
+
+
+
+
+    var bg=document.getElementById('bg');
+    var box=document.getElementById('box');
+    imgLoaderS(['./img/slide1.jpg', './img/slide2.jpg', './img/slide3.jpg', './img/slide4.jpg', './img/slide5.jpg', './img/slide6.jpg', './img/slide7.jpg', './img/slide8.jpg', './img/slide9.jpg', './img/slide10.jpg', './img/slide11.jpg' ], function(percentage){
+        bg.style.left=-100+percentage*100+'%';
+        if (percentage>=1){
+            window.setTimeout(fn,100);
+            function fn(){
+                box.style.display='none'
+            }
+        }
+        console.log(percentage);
+        console.log('成功');
+    },1000);
+</script>
+</body>
+</html>
