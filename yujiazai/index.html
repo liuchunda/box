@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>title</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/reset.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script>
+        //移动适配-设置各个设备根元素字体大小
+        var desW = 640;
+        var winW = document.documentElement.clientWidth;
+        var desWfontSize = 100;
+        document.documentElement.style.fontSize = winW/desW*desWfontSize+"px";
+    </script>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./img/slide1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slide2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slide3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slide4.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slide5.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slide6.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slide7.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slide8.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slide9.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slide10.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slide11.jpg" alt=""></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<div class="box" id="box">
+    <div class="line">
+        <div class="bg" id="bg">
+
+        </div>
+    </div>
+</div>
+<script src="js/swiper.min.js"></script>
+<script src="js/index.js"></script>
+<script language="javascript">
+    var mySwiper = new Swiper('.swiper-container',{
+        pagination : '.swiper-pagination',
+        paginationType:'fraction',
+        effect:'fade',
+        loop:true,
+    });
+
+
+    var bg=document.getElementById('bg');
+    var box=document.getElementById('box');
+    imgLoader(['./img/slide1.jpg', './img/slide2.jpg', './img/slide3.jpg', './img/slide4.jpg', './img/slide5.jpg', './img/slide6.jpg', './img/slide7.jpg', './img/slide8.jpg', './img/slide9.jpg', './img/slide10.jpg', './img/slide11.jpg' ], function(percentage){
+        bg.style.left=-100+percentage*100+'%';
+        if (percentage>=1){
+            window.setTimeout(fn,100);
+            function fn(){
+                box.style.display='none'
+            }
+        }
+        console.log(percentage);
+        console.log('成功');
+    },1000);
+
+
+</script>
+</body>
+</html>

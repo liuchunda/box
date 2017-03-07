@@ -1,0 +1,62 @@
+body,html,.swiper-container,.swiper-wrapper,.swiper-slide{
+    height: 100%;
+    width: 100%;
+}
+body{
+    position: relative;
+}
+.swiper-slide{
+    /*background-color: yellow;*/
+    overflow: hidden;
+    background-color: #00c0a5;
+}
+.slide1{
+    /*background: url("../img/slide1.jpg")no-repeat;*/
+    /*background-size:100%;*/
+
+}
+.swiper-slide img{
+    height: 100%;
+    /*width: 100%;*/
+}
+
+
+
+
+
+.box{
+    position:fixed;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: grey;
+    z-index: 10;
+}
+.box .line{
+    height: 30px;
+    width: 500px;
+    background-color: whitesmoke;
+    margin: 700px auto auto;
+    /*margin-top: 50px;*/
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+
+}
+.bg{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: -100%;
+    /*background: linear-gradient(45deg, #5CB85C 15%, #74C274 15%, #74C274 25%, #5CB85C 25%, #5CB85C 35%, #74C274 35%, #74C274 45%, #5CB85C 45%, #5CB85C 55%, #74C274 55%, #74C274 65%, #5CB85C 65%, #5CB85C 75%, #74C274 75%, #74C274 85%, #5CB85C 85%, #5CB85C 95%, #74C274 95%, #74C274 100%);*/
+    border-radius: 25px;
+    background: linear-gradient(45deg, #5CB85C 25%, #74C274 25%, #74C274 50%, #5CB85C 50%, #5CB85C 75%, #74C274 75%)repeat;
+    background-size: 30px 30px;
+}
+
+
+
+
+
