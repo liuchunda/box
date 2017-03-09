@@ -1,0 +1,301 @@
+
+.hand-Pointer{
+    cursor:pointer;
+}
+body,html,.wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+
+
+.head-Wrapper{/*头部*/
+    width: 100%;
+    max-width: 1920px;
+    min-width: 1000px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.head-Wrapper .head-Wrapper-bg{
+    border:0;
+    display: block;
+    width: 100%;
+}
+.head-Wrapper .shadow{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.conWrapper{/*内容区*/
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    font-size: 15px;
+}
+.conWrapper .lead{
+    height: 102px;
+    line-height: 28px;
+    width: 866px;
+    padding: 63px 70px 55px 64px;
+    color: #464646;
+    font-size: 15px;
+    text-indent: 2em;
+}
+.conWrapper .lead br{
+    width: 2rem;
+}
+.conWrapper>h2{
+    position: absolute;
+    color: #000000;
+    font-size: 14px;
+    width: 14px;
+    top: 61px;
+    left: 13px;
+}
+.conWrapper>span{
+    position: absolute;
+    height: 91px;
+    width: 2px;
+    background-color: #000000;
+    top: 63px;
+    left: 35px;
+}
+.conWrapper .banner-Wrap{
+    height: 375px;
+    width: 100%;
+    margin-bottom: 59px;
+    position: relative;
+}
+
+
+{
+/*.conWrapper .banner-Wrap .banner{!*轮播图*!*/
+    /*height: 355px !important;*/
+    /*width: 509px;*/
+    /*position: absolute;*/
+    /*top: 22px;*/
+    /*left: 0;*/
+/*}*/
+
+/*.conWrapper .banner-Wrap .banner>ul p{*/
+    /*height: 30px;*/
+    /*background-color: #000000;*/
+    /*opacity: 0.6;*/
+    /*margin-top: 306px;*/
+    /*color: white;*/
+    /*!*position: absolute;*!*/
+    /*!*top: 30px;*!*/
+    /*!*z-index: 10;*!*/
+/*}*/
+/*.conWrapper .banner-Wrap .banner .prev{*/
+    /*height: 51px;*/
+    /*width: 35px;*/
+    /*background: url("../img/banner-btn.png")-7px -6px;*/
+    /*position: absolute;*/
+    /*top: 131px;*/
+    /*left: 0px;*/
+    /*z-index: 10;*/
+/*}*/
+/*.conWrapper .banner-Wrap .banner .next{*/
+    /*height: 51px;*/
+    /*width: 35px;*/
+    /*background: url("../img/banner-btn.png")-50px -6px;*/
+    /*position: absolute;*/
+    /*top: 131px;*/
+    /*right: 0px;*/
+    /*z-index: 10;*/
+/*}*/
+/*.conWrapper .banner-Wrap .banner ul{*/
+    /*height: 355px !important;;*/
+    /*width: 100%;*/
+/*}*/
+/*.conWrapper .banner-Wrap .banner ul li{*/
+    /*height: 336px;*/
+/*}*/
+/*.conWrapper .banner-Wrap .banner ul .slide1{*/
+    /*background-color: #00b3ee;*/
+/*}*/
+/*.conWrapper .banner-Wrap .banner ul .slide2{*/
+    /*background-color: red;*/
+/*}*/
+/*.conWrapper .banner-Wrap .banner ul .slide3{*/
+    /*background-color: blue;*/
+/*}*/
+/*.conWrapper .banner-Wrap .banner .dots{*/
+    /*position: absolute;*/
+    /*z-index: 10;*/
+    /*bottom:0;*/
+    /*left: 0;*/
+    /*width: 512px;*/
+/*}*/
+/*.conWrapper .banner-Wrap .banner .dots .dot{*/
+    /*height: 5px;*/
+    /*width: 123px;*/
+    /*margin-right: 4px;*/
+    /*background-color: #ebebeb;*/
+/*}*/
+/*.conWrapper .banner-Wrap .banner .dots .active{*/
+    /*background-color: #508ac5;*/
+/*}*/
+
+/*.conWrapper .banner-Wrap .banner li {*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+    /*background-color: rebeccapurple;*/
+    /*float: left;*/
+    /*display: inline-block;*/
+/*}*/
+
+}
+.banner-Wrap .swiper-container{/*轮播图*/
+    width: 511px;
+    height: 357px;
+    position: absolute;
+    left: 0;
+    top: 22px;
+}
+.swiper-container>p{
+    height: 51px;
+    width: 28px;
+    display: none;
+    position: absolute;
+    top: 133px;
+    cursor: pointer;
+}
+.swiper-container .prev{
+    left: 0;
+    background-image: url("../img/banner-btn.png");
+    background-position: -10px -6px;
+}
+.swiper-container .next{
+    right: 0;
+    background-image: url("../img/banner-btn.png");
+    background-position: -53px -8px;
+}
+.banner-Wrap .swiper-container .swiper-wrapper{
+    height: 337px !important;
+}
+.banner-Wrap .swiper-container .swiper-slide{
+    height: 337px !important;
+    background-color: #0000cc;
+}
+.banner-Wrap .swiper-container .pagination{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 6px;
+    width: 550px !important;
+}
+.banner-Wrap .swiper-container .pagination .swiper-pagination-switch{
+    /*display: inline-block;*/
+    float: left;
+    height: 100%;
+    width: 125px;
+    /*float: left;*/
+    background-color: #ebebeb;
+    margin-right: 5px;
+    cursor:pointer;
+    /*z-index: 100;*/
+}
+.banner-Wrap .swiper-container .pagination .swiper-active-switch{
+    background-color: #508ac5;
+}
+
+
+
+
+
+
+.conWrapper .banner-Wrap>h1{
+    height: 54px;
+    width: 100%;
+    background: url("../img/con-banner-tagLine.jpg");
+}
+.conWrapper .banner-Wrap .banner-text{
+    width: 443px;
+    height: 265px;
+    float: right;
+    padding: 40px 6px 0px 37px;
+}
+.conWrapper .banner-Wrap .banner-text>h1{
+    height: 21px;
+    line-height: 21px;
+    font-size: 17px;
+    margin-bottom: 16px;
+    color: #000000;
+}
+.conWrapper .banner-Wrap .banner-text>h2{
+    line-height: 21px;
+    font-size: 12px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.conWrapper .banner-Wrap .banner-text>p{
+    font-size: 14px;
+    color: #333333;
+    line-height: 30px;
+}
+
+.conWrapper .conWrapper-Main{
+    min-height: 1482px;
+    width: 100%;
+}
+.conWrapper .conWrapper-Main>h1{
+    height: 56px;
+    width: 100%;
+    background: url("../img/con-main-line.png");
+    margin-bottom: 53px;
+}
+.conWrapper .conWrapper-Main .main-text{
+    height: 200px;
+    width: 100%;
+}
+.conWrapper .conWrapper-Main .main-text>ul>li{
+    height: 266px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: lightgrey;
+}
+.conWrapper .conWrapper-Main .main-text>ul>li .blank{
+    float: left;
+    width: 33px;
+    height: 100%;
+}
+.conWrapper .conWrapper-Main .main-text>ul>li>div{
+    float: left;
+    width: 311px;
+    height: 100%;
+    background-color: #0d9572;
+}
+
+
+
+
+
+
+.ft-Wrapper{/*尾部*/
+    width: 100%;
+    max-width: 1920px;
+    height: 60px;
+    margin: auto;
+    background-color: #1a71dd;
+    -webkit-background: linear-gradient(to left,#1a71dd 0%, #2889cc 50%, #2889cc 50%, #295fcc 100%);
+
+}
+.ft-Wrapper>ul{
+    width: 100%;
+    padding-top: 14px;
+}
+.ft-Wrapper>ul>li{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+}
