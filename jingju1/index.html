@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>419精句</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="./css/reset.min.css">
+    <script>
+        var winW=document.documentElement.clientWidth;
+        var desW = 640;
+        var desFontSize=100;
+        document.documentElement.style.fontSize=desFontSize*winW/desW;
+    </script>
+    <style>
+        html,body,.wrap,.box{
+            width: 100%;
+            height: 100%;
+            background-color: gainsboro;
+        }
+        /*.wrap{*/
+            /*width: 640px;*/
+            /*height: 1136px;*/
+        /*}*/
+        .box{
+            perspective: 2000px;
+            overflow: hidden;
+        }
+        .rotate{
+            width: 60%;
+            height: 50%;
+            margin-top: 6rem;
+            margin-left: auto;
+            margin-right: auto;
+            transform-style: preserve-3d;
+            /*background-color: yellowgreen;*/
+            position: relative;
+            /*animation:move 20s 1s linear infinite both;*/
+
+        }
+        .rotate>li{
+            text-align: center;
+            font-size: 30px;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top:0;
+            background-color: #0BC7B4;
+        }
+        .rotate>li>img{
+            display: block;
+            width: 100%;
+        }
+        .rotate .s1{
+            transform: rotateY(60deg) translateZ(350px);
+        }
+        .rotate .s2{
+            transform: rotateY(120deg) translateZ(350px);
+        }
+        .rotate .s3{
+            transform: rotateY(180deg) translateZ(350px);
+        }
+        .rotate .s4{
+            transform: rotateY(240deg) translateZ(350px);
+        }
+        .rotate .s5{
+            transform: rotateY(300deg) translateZ(350px);
+        }
+        .rotate .s6{
+            transform: rotateY(360deg) translateZ(350px);
+        }
+        @keyframes move {
+            0%{
+                transform: rotateY(0deg);
+            }
+            100%{
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        <div class="box" id="box">
+            <ul class="rotate" id="rotate">
+                <li class="s s1"><img src="./bg-jpg/bg1.jpg"></li>
+                <li class="s s2"><img src="./bg-jpg/bg2.jpg"></li>
+                <li class="s s3"><img src="./bg-jpg/bg3.jpg"></li>
+                <li class="s s4"><img src="./bg-jpg/bg4.jpg"></li>
+                <li class="s s5"><img src="./bg-jpg/bg5.jpg"></li>
+                <li class="s s6"><img src="./bg-jpg/bg6.jpg"></li>
+            </ul>
+        </div>
+    </div>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+    var wrap=document.getElementById('warp'),
+        box=document.getElementById('box'),
+        rotate=document.getElementById('rotate');
+    var timer=null;
+    
+
+    $(function(){
+        var imgL=6;
+        var deg=360/imgL;
+        var roY=0,roX=-10;
+        var xN=0;
+        var yN=0;
+        var play=null;
+        $(rotate).mousedown(function(ev){
+            console.log('jqmosedown');
+            ev.preventDefault();
+            var x_=ev.clientX;
+            var y_=ev.clientY;
+            $(this).bind('mousemove',function(ev){
+                ev.preventDefault();
+                console.log('jqmosemove');
+                var x=ev.clientX;
+                var y=ev.clientY;
+                xN=x-x_;
+                yN=y-y_;
+                roY+=xN*0.3;
+                roX+=yN*0.3;
+                $(rotate).css({
+                    transform:' rotateY('+roY+'deg)'
+                });
+                x_=ev.clientX;
+                y_=ev.clientY;
+            });
+        }).mouseup(function(ev){
+            ev.preventDefault();
+            console.log('jqmoseup');
+            $(this).unbind('mousemove');
+            window.clearInterval(play);
+            play=setInterval(function(){
+                console.log(play);
+                xN*=0.95;
+                yN*=0.95;
+                if(xN<1 && yN<1){
+                    clearInterval(play);
+                };
+                var flag= roY;
+                roY+=xN*0.2;
+                roX+=yN*0.2;
+                if (flag==roY){
+                    window.clearInterval(play);
+                }
+                console.log(roY );
+                $(rotate).css({
+                    transform:'  rotateY('+roY+'deg)'
+                })
+            },30);
+        })
+    });
+
+
+
+
+
+    $(function(){
+        var imgL=6;
+        var deg=360/imgL;
+        var roY=0,roX=-10;
+        var xN=0;
+        var yN=0;
+        var play=null;
+    rotate.addEventListener('touchstart', function(ev) {
+        ev.preventDefault();
+        $(rotate).css({
+            transform:'rotateY('+roY+'deg)'
+        });
+        var x_=ev.changedTouches[0].clientX;
+        var y_=ev.changedTouches[0].clientY;
+        console.log('star');
+        console.log(x_);
+        document.addEventListener('touchmove', function(ev) {
+            ev.preventDefault();
+            console.log('move');
+            var x=ev.changedTouches[0].clientX;
+            var y=ev.changedTouches[0].clientY;
+            xN=x-x_;
+            yN=y-y_;
+            roY+=xN*0.05;
+            console.log('rotateY('+roY+'deg)');
+            $(rotate).css({
+                transform:'rotateY('+roY+'deg)'
+            });
+            x_=ev.changedTouches[0].clientX;
+            y_=ev.changedTouches[0].clientY;
+        }, false);
+    }, false);
+//
+    document.addEventListener('touchend', function(ev) {
+        ev.preventDefault();
+        console.log('end ');
+        window.clearInterval(play);
+        play=setInterval(function(){
+//            console.log(play);
+            xN*=0.95;
+            yN*=0.95;
+            if(xN<1 && yN<1){
+                clearInterval(play);
+            };
+            var flag= roY;
+            roY+=xN*0.2;
+            if (flag==roY){
+                window.clearInterval(play);
+            }
+            $(rotate).css({
+                transform:'  rotateY('+roY+'deg)'
+            });
+            console.log(roY);
+        },30);
+    }, false);
+    });
+</script>
+</body>
+</html>
