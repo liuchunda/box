@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            overflow: hidden;
+        }
+
+        .wrap {
+            width: 100%;
+            height: 100%;
+            background: pink;
+            line-height: 300px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hint-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+        }
+
+        .wrap .top {
+            width: 100%;
+            background: pink;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 100px;
+        }
+
+        .bottom {
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+        }
+
+        .reves-bottom {
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+        }
+
+        .bottom div {
+            width: 50%;
+            border: 2px solid #666666;
+            box-sizing: border-box;
+        }
+
+        .reves-bottom div {
+            width: 50%;
+            border: 2px solid #666666;
+            box-sizing: border-box;
+        }
+
+        .bottom .left {
+            background: #f56c6c;
+            position: absolute;
+            left: 0;
+        }
+
+        .bottom .right {
+            background: #67c231;
+            position: absolute;
+            right: 0;
+        }
+
+        .reves-bottom .left {
+            background: #f56c6c;
+            position: absolute;
+            right: 0;
+        }
+
+        .reves-bottom .right {
+            background: #67c231;
+            position: absolute;
+            left: 0;
+        }
+
+        .camera-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #F2F6FC;
+            z-index: 2;
+            display: none;
+        }
+
+        .camera-box>div {
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            right: 10px;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 50px solid #666666;
+            overflow: hidden;
+        }
+
+        .camera-box>div .img-box {
+            /* position: absolute; */
+            width: 200px;
+            height: 200px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            top: 10px;
+            margin: auto;
+            background: red;
+        }
+
+        .camera-box>div .img-box img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            -webkit-animation: opcity 3s 1 linear;
+            -moz-animation: opcity 3s 1 linear;
+            -o-animation: opcity 3s 1 linear;
+            animation: opcity 3s 1 linear;
+            /* display: none; */
+        }
+
+        .camera-box>.video-btn {
+            position: absolute;
+            bottom: 0;
+            top: auto;
+            left: 0px;
+            right: 0px;
+            margin: none;
+            width: 100%;
+            height: 100px;
+            border-radius: 0;
+            border: none;
+            background: red;
+            overflow: hidden;
+            font-size: 20px;
+            text-align: center;
+            line-height: 100px
+        }
+
+        .rotate-box {
+            -webkit-animation: rotation 5s infinite linear;
+            -moz-animation: rotation 5s infinite linear;
+            -o-animation: rotation 5s infinite linear;
+            animation: rotation 5s infinite linear;
+        }
+
+        @-webkit-keyframes rotation {
+            from {
+                -webkit-transform: rotate(0deg)
+            }
+
+            to {
+                -webkit-transform: rotate(359deg)
+            }
+        }
+
+        @-moz-keyframes rotation {
+            from {
+                -moz-transform: rotate(0deg)
+            }
+
+            to {
+                -moz-transform: rotate(359deg)
+            }
+        }
+
+        @-o-keyframes rotation {
+            from {
+                -o-transform: rotate(0deg)
+            }
+
+            to {
+                -o-transform: rotate(359deg)
+            }
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg)
+            }
+
+            to {
+                transform: rotate(359deg)
+            }
+        }
+
+
+        @-webkit-keyframes rotation {
+            from {
+                -webkit-transform: rotate(0deg)
+            }
+
+            to {
+                -webkit-transform: rotate(359deg)
+            }
+        }
+
+        @-moz-keyframes opcity {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-o-keyframes opcity {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes opcity {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <audio src="./music.mp3" id="audio"></audio>
+    <div class="wrap">
+        <div class="hint-box" id="hint-box">
+
+            <div class="top">金梅你好，抱一下中不中？</div>
+            <div class="bottom" id="btn-box">
+                <div class="left" id="left">不好</div>
+                <div class="right" id="right">好</div>
+            </div>
+        </div>
+        <div class="camera-box" id="camera-box">
+            <div class="" id="rotate-box">
+                <div class="img-box">
+                    <img src="./camera.jpeg" alt="">
+                </div>
+            </div>
+            <div class="video-btn" id="audio-btn">点击</div>
+        </div>
+    </div>
+
+    <div class="contenner">
+        <div class=""></div>
+    </div>
+    <script>
+        var btnFalg = true
+        var btnBox = document.getElementById("btn-box")
+        var  cameraBox = document.getElementById("camera-box")
+       
+        var hintBox = document.getElementById("hint-box")
+        var noBtn = document.getElementById("left")
+        var right = document.getElementById("right")
+        var audioBtn = document.getElementById("audio-btn")
+        var audio = document.getElementById("audio")
+        var rotate = document.getElementById("rotate-box")
+
+        console.log(noBtn)
+        noBtn.onclick = function () {
+            if (btnFalg) {
+                btnBox.className = "reves-bottom"
+                btnFalg = !btnFalg
+
+            } else {
+                btnBox.className = "bottom"
+                btnFalg = !btnFalg
+            }
+        }
+        //         audio.addEventListener("canplay", function(){//监听audio是否加载完毕，如果加载完毕，则读取audio播放时间
+        //         console.log(1)
+        //         setTimeout(() => {
+
+        //         }, 300);
+        //             // audio.play()
+        // //                 document.getElementById('audio_length_total').innerHTML=transTime(audio.duration);
+        //             });
+        // audio.play()
+        right.onclick = function () {
+            cameraBox.style.display = "block"
+        }
+        audioBtn.onclick = function () {
+            if (audio.paused) {
+                audio.play()
+                rotate.className = "rotate-box"
+            } else {
+                audio.pause()
+                rotate.className = ""
+            }
+            console.log(audio.paused)
+
+        }
+
+    </script>
+</body>
+
+</html>
