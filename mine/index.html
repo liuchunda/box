@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -257,12 +256,10 @@
         }
     </style>
 </head>
-
 <body>
-    <audio src="./bg1.mp3" id="audio" preload="auto"></audio>
+    <audio src="http://sp.sycdn.kuwo.cn/39ace2ce4c4bfa4931b0ad3545d7f6f4/5e381667/resource/n2/43/48/4275318305.mp3" id="audio" preload="auto"></audio>
     <div class="wrap">
         <div class="hint-box" id="hint-box">
-
             <div class="top">媳妇,亲一口好不好😚</div>
             <div class="bottom" id="btn-box">
                 <div class="left" id="left">不好</div>
@@ -278,7 +275,6 @@
             <div class="video-btn" id="audio-btn">点击</div>
         </div>
     </div>
-
     <div class="contenner">
         <div class=""></div>
     </div>
@@ -286,15 +282,12 @@
         var btnFalg = true
         var btnBox = document.getElementById("btn-box")
         var cameraBox = document.getElementById("camera-box")
-
         var hintBox = document.getElementById("hint-box")
         var noBtn = document.getElementById("left")
         var right = document.getElementById("right")
         var audioBtn = document.getElementById("audio-btn")
         var audio = document.getElementById("audio")
         var rotate = document.getElementById("rotate-box")
-
-        console.log(noBtn)
         noBtn.onclick = function () {
             if (btnFalg) {
                 btnBox.className = "reves-bottom"
