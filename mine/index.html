@@ -259,7 +259,7 @@
 </head>
 
 <body>
-    <audio src="./bg.mp3" id="audio"></audio>
+    <audio src="./bg1.mp3" id="audio"></audio>
     <div class="wrap">
         <div class="hint-box" id="hint-box">
 
@@ -285,8 +285,8 @@
     <script>
         var btnFalg = true
         var btnBox = document.getElementById("btn-box")
-        var  cameraBox = document.getElementById("camera-box")
-       
+        var cameraBox = document.getElementById("camera-box")
+
         var hintBox = document.getElementById("hint-box")
         var noBtn = document.getElementById("left")
         var right = document.getElementById("right")
@@ -305,15 +305,6 @@
                 btnFalg = !btnFalg
             }
         }
-        //         audio.addEventListener("canplay", function(){//监听audio是否加载完毕，如果加载完毕，则读取audio播放时间
-        //         console.log(1)
-        //         setTimeout(() => {
-
-        //         }, 300);
-        //             // audio.play()
-        // //                 document.getElementById('audio_length_total').innerHTML=transTime(audio.duration);
-        //             });
-        // audio.play()
         right.onclick = function () {
             cameraBox.style.display = "block"
         }
@@ -325,11 +316,7 @@
                 audio.pause()
                 rotate.className = ""
             }
-            console.log(audio.paused)
-
         }
-
     </script>
 </body>
-
 </html>
